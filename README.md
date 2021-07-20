@@ -2,7 +2,7 @@
 <p style="font-size:17px">
 A new challenge every day from <a href="https://www.hackerrank.com/domains/tutorials/30-days-of-code">HackerRank</a>. The language used is C++ for this challenge.
 </p>
-## Schedule
+<h2>Schedule</h2>
 <ol style="font-size:17px">
     <li>Day 1 - Data Types</br>
     Topics:

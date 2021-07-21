@@ -13,7 +13,7 @@ A new challenge every day from <a href="https://www.hackerrank.com/domains/tutor
             number of decimals</li>
             <li>String concatination and embedding variable using <code>""<< varName<< ""</code></li>
         </ul>
-    </li>
+    </li></br>
     <li>Day 2 - Operators </br>
     Topics:
     <ul>

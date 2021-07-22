@@ -2,7 +2,7 @@
 <p style="font-size:17px">
 A new challenge every day from <a href="https://www.hackerrank.com/domains/tutorials/30-days-of-code">HackerRank</a>. The language used is C++ for this challenge.
 </p>
-<h2>Schedule</h2>
+<h2>Outcomes</h2>
 <ol style="font-size:17px">
     <li>Day 1 - Data Types</br>
     Topics:
@@ -16,15 +16,22 @@ A new challenge every day from <a href="https://www.hackerrank.com/domains/tutor
     </li></br>
     <li>Day 2 - Operators </br>
     Topics:
-    <ul>
-        <li>Calculating the total meal cost using multiple operators</li>
-        <li>Creating a void function & calling the function</li>
-        <li>Division of two integers, gives a truncated integer</li>
-        <li>Using float within operators to give the correct division</li>
-        <li>using <code>round()</code> to scale the decimals</li>
-    </ul>
+        <ul>
+            <li>Calculating the total meal cost using multiple operators</li>
+            <li>Creating a void function & calling the function</li>
+            <li>Division of two integers, gives a truncated integer</li>
+            <li>Using float within operators to give the correct division</li>
+            <li>using <code>round()</code> to scale the decimals</li>
+        </ul>
     </li>
-    <li></li>
+    <li>Day 3 - Conditional Statements </br>
+    Topics:
+        <ul>
+        <li> Using conditional statements with numbers </li>
+        <li> Using a do while loop </li>
+        <li> checking multiple conditions using comparison operators </li>
+        </ul>
+    </li>
     <li></li>
     <li></li>
     <li></li>

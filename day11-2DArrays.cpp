@@ -5,6 +5,7 @@ using namespace std;
 /* Given a 6 x 6 array of 1s and 0s, find 
 Calculate the hourglass sum for every hourglass in A, then print the maximum hourglass sum.
 an hour glass has the format of:
+needs test
 a b c
   d
 e f g

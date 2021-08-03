@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
+#include <numeric>
 using namespace std;
 
 /* Given a 6 x 6 array of 1s and 0s, find 
@@ -11,6 +13,17 @@ a b c
 e f g
 
  */
+
+int add(int arr[6][6], int arr_i, int arr_j){
+    int sum = arr[arr_i][arr_j];
+    sum += arr[arr_i][arr_j + 1];
+    sum += arr[arr_i][arr_j + 2];
+    sum += arr[arr_i + 1][arr_j + 1];
+    sum += arr[arr_i + 2][arr_j];
+    sum += arr[arr_i + 2][arr_j + 1];
+    sum += arr[arr_i + 2][arr_j + 2];
+    return sum;
+}
 
 int main(){
     int rowSize = 6;

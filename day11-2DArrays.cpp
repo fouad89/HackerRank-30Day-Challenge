@@ -26,6 +26,7 @@ int add(int arr[6][6], int arr_i, int arr_j){
 }
 
 int main(){
+    int sum, max;
     int rowSize = 6;
     int colSize = 6;
     int myArr [rowSize][colSize];
@@ -38,7 +39,16 @@ int main(){
         {30, 31, 32, 33, 34,35}
     };
 
-    for (int i = 0; i < rowSize; i++)
+    for (int i = 0; i < 4; i++){
+        for (int j=0; j < 4; j++){
+            sum = add(testArr, i, j);
+
+        }
+        if (sum > max){
+            max = sum;
+        }
+    }
+    cout << "Maximum hour glass sum: " <<sum << endl;
 
 
 

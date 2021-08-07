@@ -30,30 +30,29 @@ private:
 
 public:
     int maxDifference;
-    vector <int> __elements;
+
 
     // class construcor
-    Difference(vector <int> elements){
-        for (int i = 0; i < elements.size(); i++){
-            for (int j=0; j<elements.size(); i++){
-                if (i != j){
-                    __elements[i] = abs(elements[i] - elements[j]);
-                }
-                
-            }
-        }
-    
-    int computeDifference(){
-        int max =0;
-        for (int i=0; i < __elements.size(); i++){
-            if (__elements[i] > max)
-            {
-                max = __elements[i];
-            }
-
-        }
-        return max;
+    Difference(vector <int> arr){
+        elements = arr;
+        maxDifference = 0;
     }
+
+       
+    // computing the difference
+    void computeDifference(){
+        int n = elements.size();
+        // setting the max Difference
+        for(int i = 0; i < n-1; i++){
+                    for(int j = i; j < n-1; j++){
+                        if(maxDifference < abs(elements[i]-elements[j+1])){
+                            maxDifference = abs(elements[i]-elements[j+1]);
+                        }
+                    }
+                }
+        
+
+    
     }
 };
 int main(){
@@ -63,9 +62,10 @@ int main(){
         testVect.push_back(arr[i]);
     }
     
-    Difference* testArray = new Difference (testVect);
+    Difference d(testVect); // using test array
     // cout << testVect.computeDifference();
-    computeDifference(testArray);
+    d.computeDifference();
+    cout << d.maxDifference;
     
 
 

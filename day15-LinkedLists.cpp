@@ -24,22 +24,35 @@ public:
     }
 };
 
+/* 
+Four steps to adding a node after:
+1. prepare a new node
+2. check if the list is empty, new node will be the head if so
+3. loop to find the last node
+4. insert the new node after the last nodè
+ */
+
 class Solution{
 public:  
-    Node* insert(Node *head, int data){
+    Node* insert(Node *head, int new_data){
         
         // allocating new node
-        Node* new_node = new Node(data);
-        if ( !head ) {
-             return new_node; 
+        Node* new_node = new Node(new_data);
+        new_node->next=NULL;
+        // if the list is empty, set the new node as the head
+        if ( head == NULL ) {
+             head = new_node; 
+             return head;
              }
-        // adding the data
-        new_node->data = data;
-        // making next of new node as the head's next
-        new_node-> next = head->next;
-        // move the head's next into the new node
-        head->next = new_node;
+        // if the list is not empty
+        Node *tail = head;
+        while (tail->next!=NULL)
+        {
+            tail = tail->next;
+        }
+        tail->next = new_node;
         return head;
+        
 
     }
 
@@ -62,6 +75,8 @@ int main()
         cin>>data;
         head=mylist.insert(head,data);
     }	
+    cout << endl;
 	mylist.display(head);
+    
 		
 }
